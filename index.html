@@ -23,26 +23,22 @@
         <div class="row">
             <div class="col col-sm-3">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="City" aria-label="city-search"
-                        aria-describedby="button-addon2">
+                    <input type="text" class="form-control" placeholder="City" id="city_search">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Search</button>
+                        <button class="btn btn-outline-primary" type="button" id="search">Search</button>
                     </div>
                 </div>
                 <br>
                 <h3>Recent searches</h3>
-                <h5>City one</h5>
-                <h5>City two</h5>
-                <h5>City three</h5>
+                <div id="recent_cities">
+
+                </div>
             </div>
             <div class="col col-sm-9 bg-primary card border-dark mb-3">
                 <div class="card-body text-light">
                     <h3 class="card-title">Current Conditions</h3>
-                    <h6 id="#city"></h6>
-                    <h6 id="#temp"></h6>
-                    <h6 id="#humidity"></h6>
-                    <h6 id="#wind"></h6>
-                    <h6 id="#uv"></h6>
+                    <div id="result"></div>
+
                 </div>
             </div>
         </div>
