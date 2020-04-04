@@ -13,10 +13,10 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             console.log(response);
-            $("#result").html(`<h3>${response.name}</h3>`);
             var currentIcon = response.weather[0].icon;
             var currentURL = `https://openweathermap.org/img/wn/${currentIcon}@2x.png`;
             $("#currentIcon").attr("src", currentURL);
+            $("#result").append(`<h3>${response.name}</h3>`);
             $("#result").append(`<h6>Temperature: ${response.main.temp} °F</h6>`);
             $("#result").append(`<h6>Humidity: ${response.main.humidity}%</h6>`);
             $("#result").append(`<h6>Wind speed: ${response.wind.speed} mph</h6>`);
