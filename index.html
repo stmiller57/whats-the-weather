@@ -27,9 +27,9 @@
                 <div class="card">
                     <div class="card-body bg-dark">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="City" id="city_search">
+                            <input type="text" class="form-control" placeholder="City" id="citySearch">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-primary" type="button" id="search">Search</button>
+                                <button class="btn btn-primary" type="button" id="search">Search</button>
                             </div>
                         </div>
                         <ul class="list-group">
@@ -40,6 +40,7 @@
             <div class="col col-sm-8 bg-primary card border-dark mb-3">
                 <div class="card-body text-light">
                     <h2 class="card-title text-center">Current Conditions</h2>
+                    <h4 class="card-title text-center" id=currentDate></h4>
                     <div id="result">
                         <img id="currentIcon" />
                     </div>
@@ -52,26 +53,31 @@
                 <h3 class="text-primary">5-day forecast</h3>
                 <div class="card-deck">
                     <div class="card bg-primary text-white" style="width: 18rem;">
+                        <h5 id=firstForecast class="card-title text-center"></h5>
                         <div id="day1" class="card-body">
                             <img id="day1Icon" />
                         </div>
                     </div>
                     <div class="card bg-primary text-white" style="width: 18rem;">
+                        <h5 id=secondForecast class="card-title text-center"></h5>
                         <div id="day2" class="card-body">
                             <img id="day2Icon" />
                         </div>
                     </div>
                     <div class="card bg-primary text-white" style="width: 18rem;">
+                        <h5 id=thirdForecast class="card-title text-center"></h5>
                         <div id="day3" class="card-body">
                             <img id="day3Icon" />
                         </div>
                     </div>
                     <div class="card bg-primary text-white" style="width: 18rem;">
+                        <h5 id=fourthForecast class="card-title text-center"></h5>
                         <div id="day4" class="card-body">
                             <img id="day4Icon" />
                         </div>
                     </div>
                     <div class="card bg-primary text-white" style="width: 18rem;">
+                        <h5 id=fifthForecast class="card-title text-center"></h5>
                         <div id="day5" class="card-body">
                             <img id="day5Icon" />
                         </div>
@@ -91,6 +97,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- My JavaScript -->
     <script src="script.js"></script>
 </body>
