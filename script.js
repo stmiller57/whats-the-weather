@@ -1,9 +1,11 @@
 $(document).ready(function () {
 
+    // Search button for city that also kicks off API calls
     $("#search").click(() => {
         var local = $("#city_search").val();
         var currentConditions = "https://api.openweathermap.org/data/2.5/weather?q=" + local + "&units=imperial&appid=eeaf132a34d76337ced09557cd619a19";
 
+        // ajax call for current weather conditions of selected city
         $.ajax({
             url: currentConditions,
             method: "GET"
@@ -19,6 +21,8 @@ $(document).ready(function () {
             var { lat } = response.coord;
             var { lon } = response.coord;
             var uvConditions = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=eeaf132a34d76337ced09557cd619a19`;
+
+            // ajax call for uvConditions
             $.ajax({
                 url: uvConditions,
                 method: "GET"
@@ -26,6 +30,8 @@ $(document).ready(function () {
                 console.log(response);
                 $("#result").append(`<p>UV index: ${response.value}</p>`);
             });
+
+            // ajax call for 5-day forecast
             var fiveDayForecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + local + "&units=imperial&appid=eeaf132a34d76337ced09557cd619a19";
             $.ajax({
                 url: fiveDayForecast,
