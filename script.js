@@ -1,12 +1,19 @@
 $(document).ready(function () {
     var today = moment().format("MMMM Do, YYYY");
     $("#currentDate").html(today);
+    var cities = JSON.parse(localStorage.getItem("searchedCities"));
+    console.log(cities);
+    if (cities) {
+        for (let i = 0; i < cities.length; i++) {
+            $(".list-group").append(`<li>${cities[i]}</li>`);
 
-    // Search button for city that also kicks off API calls
-    $("#search").click(() => {
-        var local = $("#citySearch").val();
+        }
+    }
+    else {
+        cities = [];
+    }
+    var getWeather = (local) => {
         var currentConditions = "https://api.openweathermap.org/data/2.5/weather?q=" + local + "&units=imperial&appid=eeaf132a34d76337ced09557cd619a19";
-
         // ajax call for current weather conditions of selected city
         $.ajax({
             url: currentConditions,
@@ -87,5 +94,19 @@ $(document).ready(function () {
                 $("#day5Icon").attr("src", day5URL);
             });
         });
+    };
+    // Search button for city that also kicks off API calls
+    $("#search").click(function () {
+        var city = $("#citySearch").val();
+        getWeather(city);
+        cities.push(city);
+        localStorage.setItem("searchedCities", JSON.stringify(cities));
     });
+    $('.list-group').on("click", 'li', function () {
+        console.log(this);
+        var city = $(this).text();
+        console.log(city);
+        getWeather(city);
+    });
+
 });
