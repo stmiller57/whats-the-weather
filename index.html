@@ -13,15 +13,15 @@
     <title>What's the Weather?</title>
 </head>
 
-<body>
-    <div class="jumbotron jumbotron-fluid bg-success text-white">
+<body id=font>
+    <div class="jumbotron jumbotron-fluid text-white">
         <div class="container">
             <h1 class="display-6 text-center">What's the Weather?</h1>
         </div>
     </div>
     <container>
         <div id=firstRow class="row">
-            <div class="col col-sm-3">
+            <div class="col col-sm-4">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="City" id="city_search">
                     <div class="input-group-append">
@@ -29,15 +29,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-sm-9 bg-primary card border-dark mb-3">
+            <div class="col col-sm-8 bg-primary card border-dark mb-3">
                 <div class="card-body text-light">
                     <h2 class="card-title text-center">Current Conditions</h2>
-                    <div id="result"></div>
+                    <div id="result">
+                        <img id="currentIcon" />
+                    </div>
+
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col col-sm-12">
+                <h3 class="text-primary">5-day forecast</h3>
                 <div class="card-deck">
                     <div class="card bg-primary text-white" style="width: 18rem;">
                         <div id="day1" class="card-body">
