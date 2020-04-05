@@ -41,6 +41,7 @@ $(document).ready(function () {
             }).then(function (response) {
                 console.log(response);
                 $("#result").append(`<h6>UV index: ${response.value}</h6>`);
+                // PROBLEM SPOT — I wanted to have the UV index color change depending on the value returned. I believe I needed an if statement where a value of 0-3 would leave a color of green, 3-6 would be be yellow and above 6 would be red. I wasn't able to execute this. 
             });
 
             // ajax call for 5-day forecast of searched city
@@ -91,7 +92,7 @@ $(document).ready(function () {
                     .format("MMMM Do");
                 $("#fifthForecast").html(fifthForecast);
                 $("#day5").append(`<h6>Temperature: ${response.list[33].main.temp} °F</h6>`);
-                $("#day5").append(`<p>Humidity: ${response.list[33].main.humidity}%</h6>`);
+                $("#day5").append(`<h6>Humidity: ${response.list[33].main.humidity}%</h6>`);
                 var day5Icon = response.list[33].weather[0].icon;
                 var day5URL = `https://openweathermap.org/img/wn/${day5Icon}@2x.png`;
                 $("#day5Icon").attr("src", day5URL);
