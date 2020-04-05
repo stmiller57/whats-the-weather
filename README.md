@@ -13,3 +13,7 @@ I could not figure out a way to clear all of the data. So, if someone searches f
 I also couldn't figure out a way to color the UV index to reflect conditions being good, average or poor. 
 
 #### Links
+
+
+## Screenshot
+![ScreenShot](https://raw.githubusercontent.com/stmiller57/planning-my-day/master/Assets/Screen%20Shot%202020-03-29%20at%205.16.25%20PM.png)
