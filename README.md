@@ -13,8 +13,8 @@ I could not figure out a way to clear all of the data. So, if someone searches f
 I also couldn't figure out a way to color the UV index to reflect conditions being good, average or poor. 
 
 ### Links
-Application: https://stmiller57.github.io/whats-the-weather/
-Repo: https://github.com/stmiller57/whats-the-weather
+1. Application: https://stmiller57.github.io/whats-the-weather
+2. Repo: https://github.com/stmiller57/whats-the-weather
 
 
 ### Screenshot
