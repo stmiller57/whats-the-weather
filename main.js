@@ -1,6 +1,9 @@
+// Function to make sure all HTML loads before JS
 $(document).ready(function () {
+    //    Place current date in main card to right 
     var today = moment().format("MMMM Do, YYYY");
     $("#currentDate").html(today);
+    // Variable and function to retrieve searched cities from local storage
     var cities = JSON.parse(localStorage.getItem("searchedCities"));
     console.log(cities);
     if (cities) {
@@ -14,7 +17,7 @@ $(document).ready(function () {
     }
     var getWeather = (local) => {
         var currentConditions = "https://api.openweathermap.org/data/2.5/weather?q=" + local + "&units=imperial&appid=eeaf132a34d76337ced09557cd619a19";
-        // ajax call for current weather conditions of selected city
+        // ajax call for current weather conditions of searched city
         $.ajax({
             url: currentConditions,
             method: "GET"
@@ -31,7 +34,7 @@ $(document).ready(function () {
             var { lon } = response.coord;
             var uvConditions = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=eeaf132a34d76337ced09557cd619a19`;
 
-            // ajax call for uvConditions
+            // ajax call for uvConditions in searched city
             $.ajax({
                 url: uvConditions,
                 method: "GET"
@@ -40,7 +43,7 @@ $(document).ready(function () {
                 $("#result").append(`<h6>UV index: ${response.value}</h6>`);
             });
 
-            // ajax call for 5-day forecast
+            // ajax call for 5-day forecast of searched city
             var fiveDayForecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + local + "&units=imperial&appid=eeaf132a34d76337ced09557cd619a19";
             $.ajax({
                 url: fiveDayForecast,
@@ -95,13 +98,14 @@ $(document).ready(function () {
             });
         });
     };
-    // Search button for city that also kicks off API calls
+    // Search button for city that also puts search into local storage
     $("#search").click(function () {
         var city = $("#citySearch").val();
         getWeather(city);
         cities.push(city);
         localStorage.setItem("searchedCities", JSON.stringify(cities));
     });
+    // Retrieves weather from saved searches when they are clicked
     $('.list-group').on("click", 'p', function () {
         console.log(this);
         var city = $(this).text();
