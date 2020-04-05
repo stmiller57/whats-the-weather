@@ -7,13 +7,14 @@ After entering a city and clicking the search button, the box to the right is fi
 
 Below those, a 5-day forecast appears that includes the temperature and humidity for each day along with a weather icon.
 
-### Missing functionality I would like to add
+## Missing functionality I would like to add
 I could not figure out a way to clear all of the data. So, if someone searches for the current weather again without refreshing the page, the new search's data will be appended onto the previous search's data.
 
 I also couldn't figure out a way to color the UV index to reflect conditions being good, average or poor. 
 
-#### Links
+### Links
+Application: https://stmiller57.github.io/whats-the-weather/
 
 
-#### Screenshot
+### Screenshot
 ![ScreenShot](https://raw.githubusercontent.com/stmiller57/whats-the-weather/master/assets/Weather%20dashboard.png)
