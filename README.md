@@ -15,5 +15,5 @@ I also couldn't figure out a way to color the UV index to reflect conditions bei
 #### Links
 
 
-## Screenshot
+#### Screenshot
 ![ScreenShot](https://raw.githubusercontent.com/stmiller57/whats-the-weather/master/assets/Weather%20dashboard.png)
