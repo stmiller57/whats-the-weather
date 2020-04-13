@@ -33,3 +33,7 @@ p {
     font-size: large;
     font-weight: bold;
 }
+
+p:hover {
+    background-color: blue;
+}
