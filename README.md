@@ -19,5 +19,5 @@ Below those, a 5-day forecast appears that includes the temperature and humidity
 
 
 ### Screenshots
-![ScreenShot](https://raw.githubusercontent.com/stmiller57/whats-the-weather/master/assets/Blank%20search%20screen.png)
+![ScreenShot](https://raw.githubusercontent.com/stmiller57/whats-the-weather/master/assets/One%20City.png)
 ![ScreenShot](https://raw.githubusercontent.com/stmiller57/whats-the-weather/master/assets/Multiple%20cities.png)
