@@ -4,6 +4,8 @@ This is a simple weather dashboard to search for current weather conditions and 
 
 I originally was having trouble with clearing the search data when starting a new search, but with the help of my tutor I went back and fixed that bug. 
 
+I also recently updated the color palette to fit better on my updated portfolio page. 
+
 ## Features
 After entering a city and clicking the search button, the box to the right is filled with current weather conditions. Fields include the current day's temperature, humidity, wind speed and UV index. An icon for the current day's weather is also presented.
 
@@ -18,6 +20,5 @@ Below those, a 5-day forecast appears that includes the temperature and humidity
 2. Repo: https://github.com/stmiller57/whats-the-weather
 
 
-### Screenshots
-![ScreenShot](https://raw.githubusercontent.com/stmiller57/whats-the-weather/master/assets/One%20City.png)
-![ScreenShot](https://raw.githubusercontent.com/stmiller57/whats-the-weather/master/assets/Multiple%20cities.png)
+### Screenshot
+![ScreenShot](https://raw.githubusercontent.com/stmiller57/whats-the-weather/master/assets/Green-Dark.png)
