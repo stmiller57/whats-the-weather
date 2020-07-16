@@ -1,4 +1,4 @@
-# What's the weather
+# What's the weather?
 
 This is a simple weather dashboard to search for current weather conditions and a five-day forecast by city using the OpenWeather APIs.
 
