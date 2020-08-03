@@ -16,8 +16,9 @@ p:hover {
     background-color: black;
 }
 
-#header {
-    color:#4cbb17;
+.jumbotron {
+    background-color:#4cbb17;
+    color: white;
 }
 
 #firstRow {
