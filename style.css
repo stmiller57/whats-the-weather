@@ -19,6 +19,11 @@ body {
     background-color:#4cbb17;
 }
 
+.icon-margin {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 #searchCard {
     background-color:#4cbb17;
 }
