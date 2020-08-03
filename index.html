@@ -32,7 +32,7 @@
                             <input type="text" onfocus="this.value=''" class="form-control" placeholder="City"
                                 id="citySearch">
                             <div class="input-group-append">
-                                <button class="btn btn-dark" type="button" id="search">Search</button>
+                                <button class="btn weather-card" type="button" id="search">Search</button>
                             </div>
                         </div>
                         <div class="list-group">
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="col col-sm-8 mb-3">
-                <div class="card-body text-white">
+                <div class="card-body text-white weather-card">
                     <h2 class="card-title text-center weather-card">Current Conditions</h2>
                     <h4 class="card-title text-center weather-card" id=currentDate></h4>
                     <div id="result">
@@ -55,7 +55,7 @@
         <div class="row">
             <div class="col col-sm-12">
                 <h3 class="text-dark text-center">5-day forecast</h3>
-                <div class="card-deck">
+                <div class="card-deck weather-card">
                     <div class="card text-white" style="width: 18rem;">
                         <h5 id=firstForecast class="card-title text-center weather-card"></h5>
                         <div id="day1" class="card-body">
