@@ -17,81 +17,78 @@
 
 <body id=font>
     <!-- Jumbotron with title for application -->
-    <div class="jumbotron jumbotron-fluid text-white text-center">
-        <div class="container">
-            <img src="./assets/Tstorm.svg" alt="Thunderstorm" className="img-responsive" width="8%" />
-            <h1 class="display-6 text-center">What's the Weather?</h1>
-            <img src="./assets/Tstorm.svg" alt="Thunderstorm" className="img-responsive" width="8%" />
+    <nav class="navbar text-white text-center">
+        <img src="./assets/Tstorm.svg" alt="Thunderstorm" className="img-responsive" width="8%" />
+        <span class="navbar-brand mb-0 h1">What's the Weather?</span>
+        <img src="./assets/Tstorm.svg" alt="Thunderstorm" className="img-responsive" width="8%" />
+    </nav>
+    <!-- Row for Search box and current conditions-->
+    <div id=firstRow class="row">
+        <div class="col col-sm-4">
+            <div class="card">
+                <div id="searchCard" class="card-body">
+                    <div class="input-group mb-3">
+                        <input type="text" onfocus="this.value=''" class="form-control" placeholder="City"
+                            id="citySearch">
+                        <div class="input-group-append">
+                            <button class="btn weather-card text-white" type="button" id="search">Search</button>
+                        </div>
+                    </div>
+                    <div class="list-group">
+                        <h4 class="text-center text-white">Recent searches</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-8 mb-3">
+            <div class="card-body text-white weather-card">
+                <h2 class="card-title text-center weather-card">Current Conditions</h2>
+                <h4 class="card-title text-center weather-card" id=currentDate></h4>
+                <div id="result">
+                    <img id="currentIcon" />
+                </div>
+            </div>
         </div>
     </div>
-    <container>
-        <!-- Row for Search box and current conditions-->
-        <div id=firstRow class="row">
-            <div class="col col-sm-4">
-                <div class="card">
-                    <div id="searchCard" class="card-body">
-                        <div class="input-group mb-3">
-                            <input type="text" onfocus="this.value=''" class="form-control" placeholder="City"
-                                id="citySearch">
-                            <div class="input-group-append">
-                                <button class="btn weather-card text-white" type="button" id="search">Search</button>
-                            </div>
-                        </div>
-                        <div class="list-group">
-                            <h4 class="text-center text-white">Recent searches</h4>
-                        </div>
+    <!-- Row for card deck with 5-day forecast -->
+    <div class="row">
+        <div class="col col-sm-12">
+            <h3 class="text-dark text-center">5-day forecast</h3>
+            <div class="card-deck">
+                <div class="card text-white" style="width: 18rem;">
+                    <h5 id=firstForecast class="card-title text-center weather-card"></h5>
+                    <div id="day1" class="card-body weather-card">
+                        <img id="day1Icon" />
                     </div>
                 </div>
-            </div>
-            <div class="col col-sm-8 mb-3">
-                <div class="card-body text-white weather-card">
-                    <h2 class="card-title text-center weather-card">Current Conditions</h2>
-                    <h4 class="card-title text-center weather-card" id=currentDate></h4>
-                    <div id="result">
-                        <img id="currentIcon" />
+                <div class="card text-white" style="width: 18rem;">
+                    <h5 id=secondForecast class="card-title text-center weather-card"></h5>
+                    <div id="day2" class="card-body weather-card">
+                        <img id="day2Icon" />
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Row for card deck with 5-day forecast -->
-        <div class="row">
-            <div class="col col-sm-12">
-                <h3 class="text-dark text-center">5-day forecast</h3>
-                <div class="card-deck">
-                    <div class="card text-white" style="width: 18rem;">
-                        <h5 id=firstForecast class="card-title text-center weather-card"></h5>
-                        <div id="day1" class="card-body weather-card">
-                            <img id="day1Icon" />
-                        </div>
+                <div class="card text-white" style="width: 18rem;">
+                    <h5 id=thirdForecast class="card-title text-center weather-card"></h5>
+                    <div id="day3" class="card-body weather-card">
+                        <img id="day3Icon" />
                     </div>
-                    <div class="card text-white" style="width: 18rem;">
-                        <h5 id=secondForecast class="card-title text-center weather-card"></h5>
-                        <div id="day2" class="card-body weather-card">
-                            <img id="day2Icon" />
-                        </div>
+                </div>
+                <div class="card text-white" style="width: 18rem;">
+                    <h5 id=fourthForecast class="card-title text-center weather-card"></h5>
+                    <div id="day4" class="card-body weather-card">
+                        <img id="day4Icon" />
                     </div>
-                    <div class="card text-white" style="width: 18rem;">
-                        <h5 id=thirdForecast class="card-title text-center weather-card"></h5>
-                        <div id="day3" class="card-body weather-card">
-                            <img id="day3Icon" />
-                        </div>
-                    </div>
-                    <div class="card text-white" style="width: 18rem;">
-                        <h5 id=fourthForecast class="card-title text-center weather-card"></h5>
-                        <div id="day4" class="card-body weather-card">
-                            <img id="day4Icon" />
-                        </div>
-                    </div>
-                    <div class="card text-white" style="width: 18rem;">
-                        <h5 id=fifthForecast class="card-title text-center weather-card"></h5>
-                        <div id="day5" class="card-body weather-card">
-                            <img id="day5Icon" />
-                        </div>
+                </div>
+                <div class="card text-white" style="width: 18rem;">
+                    <h5 id=fifthForecast class="card-title text-center weather-card"></h5>
+                    <div id="day5" class="card-body weather-card">
+                        <img id="day5Icon" />
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+    </div>
     </container>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
