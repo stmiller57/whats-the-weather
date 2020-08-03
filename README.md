@@ -1,24 +1,26 @@
-# What's the weather?
+# What's the Weather?
 
 This is a simple weather dashboard to search for current weather conditions and a five-day forecast by city using the OpenWeather APIs.
 
-I originally was having trouble with clearing the search data when starting a new search, but with the help of my tutor I went back and fixed that bug. 
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+2. [Contributing](#contributing)
+3. [License](#license)
 
-I also recently updated the color palette to fit better on my updated portfolio page. 
+![](public/assets/Portfolio.gif)
 
-## Features
+## Description
 After entering a city and clicking the search button, the box to the right is filled with current weather conditions. Fields include the current day's temperature, humidity, wind speed and UV index. An icon for the current day's weather is also presented.
 
 Below those, a 5-day forecast appears that includes the temperature and humidity for each day along with a weather icon.
 
-## Future development
-1. I would like to refine the navbar at the top to include photos or graphics.
-2. I would like to color-code the UV index to reflect the danger level that day (green for low risk, orange for medium risk, red for high risk).
+The application can be found at the link below:
+https://stmiller57.github.io/whats-the-weather
 
-### Links
-1. Application: https://stmiller57.github.io/whats-the-weather
-2. Repo: https://github.com/stmiller57/whats-the-weather
+## Contributing
 
+Suggestions for improvements to the project are welcome. 
 
-### Screenshot
-![ScreenShot](https://raw.githubusercontent.com/stmiller57/whats-the-weather/master/assets/Green-Dark.png)
+### License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
