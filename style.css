@@ -1,34 +1,8 @@
-h1{
-    color: white; 
-}
-
-#firstRow {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.card-deck {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
 body {
     font-family: 'Roboto', sans-serif;}
 
-#header {
-    background-color:#4cbb17;
-}
-
-.icon-margin {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#searchCard {
-    background-color:#4cbb17;
-}
-.text-primary {
-    margin-left: 30px;
+h1 {
+    color: white; 
 }
 
 p {
@@ -41,6 +15,27 @@ p {
 p:hover {
     background-color: black;
 }
+
+#header {
+    color:#4cbb17;
+}
+
+#firstRow {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card-deck {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#searchCard {
+    background-color:#4cbb17;
+}
+.text-primary {
+    margin-left: 30px;
+}
+
 
 .weather-card {
     background-color: #8617bb;
