@@ -4,11 +4,10 @@ This is a simple weather dashboard to search for current weather conditions and 
 
 ## Table of Contents
 1. [Description](#description)
-2. [Installation](#installation)
 2. [Contributing](#contributing)
 3. [License](#license)
 
-![](public/assets/Weather.gif)
+![](assets/Weather.gif)
 
 ## Description
 After entering a city and clicking the search button, the box to the right is filled with current weather conditions. Fields include the current day's temperature, humidity, wind speed and UV index. An icon for the current day's weather is also presented.
